@@ -1,0 +1,32 @@
+name: Jerry Build Example
+
+env:
+  PROS_CLI_VERSION: "3.5.4"
+
+on:
+  push:
+    branches: "**"
+    tags:
+      - "v*" # Trigger on version tags
+  pull_request:
+    branches: "**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache ARM Toolchain
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/toolchain
+          key: pros-build-arm-none-eabi-toolchain
+
+      - name: Build template
+        uses: jerrylum/pros-build@main
+        with:
+          build_args: -j
