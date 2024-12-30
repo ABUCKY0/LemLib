@@ -14,14 +14,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+        
+      - name: Cache Docker images.
+        uses: ScribeMD/docker-cache@0.5.0
+        with:
+          key: docker-${{ runner.os }}-${{ hashFiles(paths) }}
  
       - name: Run LemLib/pros-build
         id: test
         uses: LemLib/pros-build@uhh/dieting-the-whole-image
-        with:
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
