@@ -8,5 +8,5 @@ on:
 
 
 jobs:
-  build:
+  clang-format:
     uses: abucky0/lemlib-common-files-test/.github/workflows/test-clang-format.yml@main
