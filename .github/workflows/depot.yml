@@ -11,4 +11,4 @@ jobs:
     uses: ABUCKY0/lemlib-common-files-test/.github/workflows/depot.yml@main
     with:
       target-repo: ABUCKY0/LemLib
-      source-repo: ABUCKY0/LemLib
+      source-repo: LemLib/LemLib
