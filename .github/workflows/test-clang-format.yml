@@ -10,3 +10,5 @@ on:
 jobs:
   clang-format:
     uses: abucky0/lemlib-common-files-test/.github/workflows/test-clang-format.yml@main
+    with:
+      source: './src/lemlib ./include/lemlib'
