@@ -11,6 +11,6 @@ permissions:
 
 jobs:
   auto-format:
-    uses: abucky0/lemlib-common-files-test/.github/workflows/auto-format.yml@main
+    uses: LemLib/common-files/.github/workflows/auto-format.yml@main
     with:
       format-source: './src/lemlib ./include/lemlib'

@@ -10,4 +10,4 @@ on:
 
 jobs:
   build:
-    uses: abucky0/lemlib-common-files-test/.github/workflows/pros-build.yml@main
+    uses: LemLib/common-files/.github/workflows/pros-build.yml@main

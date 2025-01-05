@@ -9,4 +9,4 @@ on:
 
 jobs:
   pr-comment:
-    uses: abucky0/lemlib-common-files-test/.github/workflows/pr-comment.yml@main
+    uses: LemLib/common-files/.github/workflows/pr-comment.yml@main
