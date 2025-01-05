@@ -9,12 +9,4 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - uses: DoozyX/clang-format-lint-action@v0.18
-      with:
-        source: './src/lemlib ./include/lemlib'
-        extensions: 'hpp,cpp'
-        clangFormatVersion: 18
+    uses: abucky0/lemlib-common-files-test/.github/workflows/test-clang-format.yml@main
