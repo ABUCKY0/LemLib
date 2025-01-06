@@ -10,4 +10,4 @@ on:
 
 jobs:
   build:
-    uses: LemLib/common-files/.github/workflows/pros-build.yml@main
+    uses: LemLib/common-files/.github/workflows/pros-build.yml@4443bc2602ffe78e8f3c25e7ce25c5e89b87d807
